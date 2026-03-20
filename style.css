@@ -1,0 +1,340 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+
+body{
+  font-family:times 'Times New Roman', Times, serif;
+  background-color:#fbfcf8;
+color:#333;
+text-transform: capitalize;
+padding: 2rem;
+}
+
+.container{
+  max-width:1200px ;
+  margin:auto;
+}
+
+header{
+  text-align: center;margin-bottom: 3rem"";
+}
+
+
+.brand{
+  text-align: center ;
+  font-size:2.5rem;
+  color:#febe10;
+}
+
+
+
+.tagline{
+  color:#febe10;
+  font-size: 1rem ;
+  font-style: oblique; text-align: center;
+}
+
+
+.product-display{
+  display:flex;
+  gap:3rem;
+  flex-wrap: wrap;
+  
+}
+
+
+.gallery{
+  flex:1;
+  position: relative;
+}
+
+
+.gallery input{
+  display:none ;
+}
+
+
+.images{
+  position: relative ;
+  height:400px ;
+  overflow:hidden;
+  border-radius:8px ;
+}
+
+
+.image {
+  display:none ;
+  position: absolute ;
+  width:100%;
+  height:100%;
+}
+ 
+#img1:checked ~ .images #slide1,
+#img2:checked ~ .images #slide2,
+#img3:checked ~ .images #slide3 {
+  display: block;
+}
+
+.image img {
+  width:100%;
+  height:100%;
+  object-fit: cover;
+}
+
+.thumbnails{
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem ;
+}
+
+.thumbnails label{
+  cursor:pointer;
+}
+
+.thumbnails img{
+  width: 60px;
+  height:60px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.products-info {
+  flex: 1;
+}
+
+.products-info h2{
+  font-size: 2rem ;
+  color: #febe10;
+}
+
+.description{
+  margin: 1rem;
+  color : darkgoldenrod;
+  line-height: 1.5;
+}
+
+.price {
+  font-size: 1.5rem;
+  font-weight: bold;
+ color : darkorange;
+}
+
+button{
+  background:linear-gradient(to right,#adff2f,#ffd700);
+  color: #fafafa;
+  border: none ;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor:pointer;
+}
+
+.pd2{
+  display: flex;
+  gap:3rem;
+  flex-wrap: wrap;
+}
+
+.pictures{
+  flex:1;
+  position: relative;
+}
+
+.pictures input {
+  display: none ;
+}
+ 
+ .albums {
+   position: relative;
+   height:400px;
+   overflow:hidden;
+   border-radius: 8px;
+ }
+ 
+ .album{
+   display:none;
+   position: absolute;
+   width:100%;
+   height:100%;
+ }
+ 
+ #pics1:checked ~ .albums #toggle1,
+ #pics2:checked ~ .albums #toggle2,
+ #pics3:checked ~ .albums #toggle3{
+   display: block;
+ }
+ 
+ .album img{
+   width:100%;
+   height:100%;
+   object-fit: cover;
+   margin-top: 20px;
+ }
+ 
+ .thumbnails2{
+   margin-top: 2rem;
+   display: flex;
+   justify-content: center;
+   gap: 1rem;
+ }
+ .thumbnails2 label{
+   cursor:pointer;
+ }
+ 
+ .thumbnails2 img{
+   width:60px ;
+   height:60px ;
+   object-fit: cover;
+   border-radius: 5px;
+ }
+ 
+ .information {
+   flex:1;
+   position: relative;
+ }
+ 
+ .information input {
+   display: none;
+ }
+ 
+ .info-heads{
+   display:flex;
+   margin-top:1rem;
+   justify-content: center;
+   gap: 3rem;
+   font-size: 0.75rem;
+   font-weight: bold;
+   
+ }
+ 
+ .info-heads label{
+   cursor: pointer;
+   color:#febe10;
+   padding-top: 1rem;
+   border-radius:5px;
+ background:#fff7ee;
+ margin-bottom: 2rem;
+  padding-left:1rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+ }
+ 
+ .info1{
+   display: none;
+   background-color:#fff7ee;
+   border-radius:10px;
+ }
+ 
+.info1 h2{
+  color :#febe10;
+  margin-bottom:1rem ;
+  
+  
+  
+  
+}
+
+.info1 h6{
+  margin-bottom: 1rem;
+  color: #febe10;
+  
+}
+
+.info1 ul{
+  color: darkgoldenrod;
+  
+}
+.info1 span{
+  color: darkorange;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  font-weight: bold;
+}
+ 
+ .info2{
+  display: none;
+   background-color: #fff7ee;
+   padding: 2rem;
+   border-radius:10px;
+ }
+ .info2 h2{
+   color: #febe10;
+   padding-top: 1rem;
+   margin-bottom: 1rem;
+   
+ }
+ .info2 h6{
+   color:#febe10;
+   padding-top: 1rem;
+   margin-bottom: 1rem;
+ }
+ .info2 ul{
+  color: darkgoldenrod;
+  }
+  
+  .info2 span{
+    color: darkorange ;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    font-weight: bold;
+  }
+  
+  .info3{
+    display: none;
+    background-color: #fff7ee;
+    color: darkgoldenrod;
+    font-size: 1rem;
+   padding: 2rem;
+   border-radius: 10px;
+   
+  }
+  
+  .info3 h2{
+    color:#febe10;
+    font-size: 1.5rem;
+    padding-top: 1rem;
+    margin-bottom: 1rem;
+    
+    
+  }
+  
+  .info3 h6{
+    margin:2rem 2rem ;
+    color:#febe10;
+    
+  }
+  
+  .info3 ul{
+    margin-left: 1rem;
+  }
+  
+  .info3 span{
+    color: darkorange;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    font-weight: bold;
+  }
+  
+  #about1:checked ~ .infos .info1,
+  #about2:checked ~ .infos .info2,
+  #about3:checked ~ .infos .info3{
+    display: block;
+  }
+
+  
+  
+  
+  
+  
+  
+  
+  
+ 
+
+ 
+ 
+ 
